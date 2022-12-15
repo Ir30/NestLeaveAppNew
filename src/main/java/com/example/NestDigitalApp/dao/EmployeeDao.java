@@ -33,4 +33,10 @@ public interface EmployeeDao extends CrudRepository<Employee, Integer> {
 
     @Query(value = "SELECT `id` FROM `employee` WHERE `emp_code`= :id", nativeQuery = true)
     List<Employee> GetEmployeeId(@Param("id") int id);
+
+
+    @Modifying
+    @Transactional
+    @Query(value = "DELETE FROM `employee` WHERE `id`= :id",nativeQuery = true)
+    public void deleteEmp(@Param("id")Integer id);
 }

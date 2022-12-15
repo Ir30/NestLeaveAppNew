@@ -3,7 +3,6 @@ package com.example.NestDigitalApp.controller;
 import com.example.NestDigitalApp.dao.LeaveDao;
 import com.example.NestDigitalApp.model.Employee;
 import com.example.NestDigitalApp.model.LeaveModel;
-import com.example.NestDigitalApp.model.Leaves1;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-public class LeaveController {
+public class Leave {
     @Autowired
     private LeaveDao ldao;
 
